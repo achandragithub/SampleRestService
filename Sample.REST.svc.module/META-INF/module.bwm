@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_SDXRUMHHEem2bKiY47-c1w" targetNamespace="http://tns.tibco.com/bw/composite/Sample.REST.svc.module" name="Sample.REST.svc.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_bmB6YcHHEem2bKiY47-c1w" name="samplerest" promote="Componentsamplerest/samplerest">
+    <sca:interface.wsdl xmi:id="_bmemUMHHEem2bKiY47-c1w" interface="http://xmlns.example.com/20190818084949PLT#wsdl.interface(samplerest)" scaext:wsdlLocation="../Processes/sample/rest/svc/module/samplerest.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_bmplcMHHEem2bKiY47-c1w" name="RestService" path="/samplerest" docBasePath="http://localhost:7777/Sample.REST.svc.module" docResourcePath="samplerest" basePath="/" connector="sample.rest.svc.module.samplerest" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/sample.rest.svc.module.samplerest-samplerest.json">
+      <operation xmi:id="_bmvFAMHHEem2bKiY47-c1w" operationName="get" nickname="get-samplerest" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_bpFOYMHHEem2bKiY47-c1w"/>
+      <advancedConfig xmi:id="_bmsowMHHEem2bKiY47-c1w" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_bmvFAcHHEem2bKiY47-c1w" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_TPr6gMHHEem2bKiY47-c1w" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TP1rgMHHEem2bKiY47-c1w" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TP_cgMHHEem2bKiY47-c1w" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TQImcMHHEem2bKiY47-c1w" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TQSXcMHHEem2bKiY47-c1w" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TQSXccHHEem2bKiY47-c1w" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TQbhYMHHEem2bKiY47-c1w" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TQbhYcHHEem2bKiY47-c1w" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TQlSYMHHEem2bKiY47-c1w" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_bllOcMHHEem2bKiY47-c1w" name="Componentsamplerest" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_bllOccHHEem2bKiY47-c1w" processName="sample.rest.svc.module.samplerest"/>
+    <sca:service xmi:id="_bl4JYMHHEem2bKiY47-c1w" name="samplerest">
+      <sca:interface.wsdl xmi:id="_bmB6YMHHEem2bKiY47-c1w" interface="http://xmlns.example.com/20190818084949PLT#wsdl.interface(samplerest)" scaext:wsdlLocation="../Processes/sample/rest/svc/module/samplerest.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
