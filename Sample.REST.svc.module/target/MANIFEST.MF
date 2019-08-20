@@ -1,4 +1,4 @@
-Manifest-Version: 1.0.0.201908191155
+Manifest-Version: 1.0.0.201908201213
 Bundle-SymbolicName: Sample.REST.svc.module
 Bundle-ManifestVersion: 2
 TIBCO-BW-Edition: bwe
@@ -10,7 +10,7 @@ Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tib
 TIBCO-BW-ConfigProfile: META-INF/default.substvar
 TIBCO-BW-Version: 6.5.1 HF2 V45 2019-07-19
 Bundle-Name: Sample REST Svc Module
-Bundle-Version: 1.0.0.201908191155
+Bundle-Version: 1.0.0.201908201213
 Bundle-ClassPath: .
 TIBCO-BW-ApplicationModule: META-INF/module.bwm
 TIBCO-BW-JobSharedVariables: META-INF/module.jsv
