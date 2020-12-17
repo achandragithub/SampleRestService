@@ -12,10 +12,10 @@
   <packaging>bwear</packaging>
   <properties>
     <skipTests>false</skipTests>
-    <bw.Home>E:\tibco\bw6\bw\6.5</bw.Home>
+    <bw.Home>/opt/tibco/bw661</bw.Home>
     <project.type>None</project.type>
     <failIfNoTests>false</failIfNoTests>
-    <tibco.Home>E:\tibco\bw6</tibco.Home>
+    <tibco.Home>/opt/tibco/bw661</tibco.Home>
   </properties>
   <build>
     <plugins>
